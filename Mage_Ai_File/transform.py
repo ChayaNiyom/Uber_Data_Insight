@@ -87,7 +87,7 @@ def transform(df, *args, **kwargs):
                    'tip_amount', 'tolls_amount', 'improvement_surcharge', 'total_amount']]
 
     return {"datetime_dim":datetime_dim.to_dict(orient="dict"),
-
+    "vendor_dim":vendor_dim.to_dict(orient="dict"),
     "rate_code_dim":rate_code_dim.to_dict(orient="dict"),
     "payment_type_dim":payment_type_dim.to_dict(orient="dict"),
     "fact_table":fact_table.to_dict(orient="dict")}
